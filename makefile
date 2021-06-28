@@ -47,10 +47,10 @@ $(TARGET): $(OBJ)
 .PHONY: clean dep
 
 dep:
-	g++ -MM -MG $(SRC) >makefile.depend
+	g++ -MM -MG -std=c++11 $(SRC) >makefile.depend
 
 makefile.depend: 
-	g++ -MM -MG $(SRC) >makefile.depend
+	g++ -MM -MG -std=c++11 $(SRC) >makefile.depend
 
 clean:
 	rm -f $(TARGET) $(OBJ) gmon.*.out gmon.out
