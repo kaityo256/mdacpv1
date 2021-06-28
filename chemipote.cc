@@ -145,7 +145,6 @@ void
 ChemiPote::Thermalize(MDUnit *mdu, Parameter &param) {
   const int THERMALIZE_LOOP = param.GetIntegerDef("ThermalizeLoop", 10000);
   const int OBSERVE_LOOP = param.GetIntegerDef("ObserveLoop", 100);
-  const double temperature = param.GetDoubleDef("AimedTemperature", 0.9);
   mdu->SetControlTemperature(true);
   mdu->ShowSystemInfo();
   for (int i = 0; i < THERMALIZE_LOOP; i++) {
