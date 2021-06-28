@@ -1,1 +1,6 @@
 makefile.opt
+makefile.depend
+*.o
+mdacp
+*.dat
+*.out

@@ -1,14 +1,12 @@
-//---------------------------------------------------------------------------
-#ifndef mt_h
-#define mt_h
-//---------------------------------------------------------------------------
+#pragma once
+#include <random>
+
 class MT {
+private:
+  static std::mt19937 mt;
+
 public:
   static void SetSeed(int seed);
   static double GetDouble(void);
   static double GetGauss(void);
-  static void Save(char * filename);
-  static void Load(char * filename);
 };
-//---------------------------------------------------------------------------
-#endif
