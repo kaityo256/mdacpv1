@@ -10,8 +10,8 @@ LDFLAGS=
 # Default Parameters
 #------------------------------------------------------
 
-CC=g++
-CPPFLAGS=
+CC=mpic++
+CPPFLAGS=-std=c++11 -O3
 
 #------------------------------------------------------
 # Compile Option

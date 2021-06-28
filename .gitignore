@@ -4,3 +4,5 @@ makefile.depend
 mdacp
 *.dat
 *.out
+*.sh.e*
+*.sh.o*
